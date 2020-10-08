@@ -5,7 +5,7 @@
 </head>
 <body>
 	<div class="container">
-	<h3>Enter Details</h3>
+	<h3>Enter login details</h3>
 	<form method="post" action="login">
 		<div class="fields-container">
 			<div><input name="email" placeholder="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required/></div>
@@ -13,6 +13,6 @@
 			<div><input class="submit-field" type="submit" value="Login"></div>
 		</div>
 	</form>
-	<div>Not registered? <a href="/register"> Create an account</a></div>
+	<div>Not registered? <a href="/register-app-velocity/register.vm"> Create an account</a></div>
 </body>
 </html>
