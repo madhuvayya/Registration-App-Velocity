@@ -1,0 +1,41 @@
+@charset "ISO-8859-1";
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #67BE4B;	
+}
+
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 5px;	
+  text-align: center;
+}
+
+.fields-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+input {
+	width: 90%;
+	padding: 5px;
+	margin-bottom: 5px;
+	border-radius: 5px
+}
+
+.submit-field {
+	background-color: #00B242;
+	color: #ffffff;  
+}
+
+a {
+	text-decoration: none;
+	color: #32C25D;
+}
