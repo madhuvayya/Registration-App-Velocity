@@ -11,27 +11,27 @@
 			<table>
 			<tr>
 			<td><label for="first_name">First Name</label></td>
-			<td><input name="first_name" required/></td>
+			<td><input name="first_name" id="first_name" required/></td>
 			</tr>
 			<tr>
 			<td><label for="last_name">Last Name</label></td>
-			<td><input name="last_name" required/></td>
+			<td><input name="last_name" id="last_name" required/></td>
 			</tr>
 			<tr>
 			<td><label for="phone_number">Phone Number</label></td>
-			<td><input name="phone_number" required/></td>
+			<td><input name="phone_number" id="phone_number" required/></td>
 			</tr>
 			<tr>			
 			<td><label for="email">Email</label></td>
-			<td><input name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required/></td>
+			<td><input name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/></td>
 			</tr>
 			<tr>
 			<td><label for="password">Password</label></td>
-			<td><input type="password" name="password" required/></td>
+			<td><input type="password" id="password" name="password" required/></td>
 			</tr>
 			<tr>
 			<td><label for="confirm-password">Confirm password</label></td>
-			<td><input type="password" name="confirm-password" required/></td>
+			<td><input type="password" id="confirm-password" name="confirm-password" required/></td>
 			</tr>
 			</table>
 			<div><input class="submit-field" type="submit" value="Submit"></div>
