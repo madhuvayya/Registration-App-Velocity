@@ -13,23 +13,19 @@ public class DBConnection {
 	static {
 		InputStream propertiesInputStream = DBConnection.class.getClassLoader().getResourceAsStream("/resources/db.properties");
 		Properties properties = new Properties();
+
 		try {
 			properties.load(propertiesInputStream);
-		} catch (IOException ioException) {
-			ioException.printStackTrace();
-		}
-
-		String driver = properties.getProperty("db.driver");
-		String url = properties.getProperty("db.url");
-		String username = properties.getProperty("db.username");
-		String password = properties.getProperty("db.password");
-
-		try {
-			Class.forName(driver);
-			connection = DriverManager.getConnection(url, username, password);
+			Class.forName(properties.getProperty("db.driver"));
+			connection = DriverManager.getConnection(
+					properties.getProperty("db.url"), 
+					properties.getProperty("db.username"), 
+					properties.getProperty("db.password"));
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (SQLException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
